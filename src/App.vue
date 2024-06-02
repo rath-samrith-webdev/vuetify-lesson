@@ -1,20 +1,30 @@
 <template>
   <v-app>
-    <v-main>
-      <HelloWorld />
-    </v-main>
+    <v-toolbar
+        image="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+        dark
+        prominent
+    >
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+      <v-toolbar-title>Vuetify</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn icon>
+        <v-icon>mdi-export</v-icon>
+      </v-btn>
+    </v-toolbar>
+    <v-content>
+      <h1>Router</h1>
+    </v-content>
+    <v-footer border></v-footer>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "App",
-
-  components: {
-    HelloWorld,
-  },
 
   data: () => ({
     //
