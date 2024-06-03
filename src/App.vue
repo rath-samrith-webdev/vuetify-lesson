@@ -1,19 +1,36 @@
 <template>
   <v-app>
-    <v-toolbar
-      image="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-      dark
-      prominent
-    >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
+    <v-toolbar dark prominent>
       <v-toolbar-title>Vuetify</v-toolbar-title>
-
       <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-export</v-icon>
+      <v-btn
+        class="mx-4 white--text"
+        elevation="2"
+        x-large
+        rounded
+        color="deep-purple darken-1"
+        to="/feed"
+      >
+        Home
       </v-btn>
+      <v-btn
+        class="mx-4 white--text"
+        elevation="2"
+        x-large
+        rounded
+        color="deep-purple darken-1"
+        to="/feed"
+        >Resume</v-btn
+      >
+      <v-btn
+        class="mx-4 white--text"
+        elevation="2"
+        x-large
+        rounded
+        color="deep-purple darken-1"
+        to="/feed"
+        >Journal</v-btn
+      >
     </v-toolbar>
     <v-content class="pt-5">
       <v-row dense>
